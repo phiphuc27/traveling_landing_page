@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --clr-primary: #ed6950;
+    --clr-secondary: #ffc74a;
+    --clr-secondary-shadow: #a57e2b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #343434;
+    background-image: url('/assets/img/bg.png');
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.nav {
+    padding: 4rem 3rem 0 3rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    font-size: 1.8rem;
+}
+
+.nav__logo,
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.nav__logo > span {
+    font-weight: bold;
+    transition: color ease-out 200ms;
+}
+
+.nav__logo > span:hover {
+    color: var(--clr-primary);
+}
+
+.nav__list {
+    gap: 5rem;
+}
+
+.nav__link {
+    cursor: pointer;
+    transition: color ease-out 200ms;
+}
+
+.nav__link:hover {
+    color: var(--clr-secondary);
+}
+
+.nav__search {
+    position: relative;
+    color: var(--clr-secondary);
+    transition: color ease-out 200ms;
+}
+
+.nav__search:hover {
+    color: var(--clr-secondary-shadow);
+}
