@@ -3,13 +3,17 @@
 :root {
     --clr-primary: #ed6950;
     --clr-secondary: #ffc74a;
-    --clr-secondary-shadow: #a57e2b;
+    --clr-secondary-shadow: #b98000;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+p {
+    font-size: 1.8rem;
 }
 
 ul {
@@ -29,6 +33,25 @@ header {
     background-position: center;
     background-blend-mode: overlay;
 }
+
+.btn {
+    padding: 2rem 3.5rem;
+    background-color: var(--clr-secondary);
+    border-radius: 10em;
+    color: var(--clr-secondary-shadow);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color ease-in 200ms, background-color ease-in 200ms;
+}
+
+.btn:hover {
+    background-color: var(--clr-secondary-shadow);
+    color: var(--clr-secondary);
+}
+
+/* Navbar */
 
 .nav {
     padding: 4rem 3rem 0 3rem;
@@ -82,3 +105,41 @@ header {
 .nav__search:hover {
     color: var(--clr-secondary-shadow);
 }
+
+/* End Navbar */
+
+/* Hero */
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__title {
+    width: 60rem;
+    margin-top: 12rem;
+    font-size: 9.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero__title > span {
+    color: var(--clr-primary);
+}
+
+.hero__subtitle {
+    opacity: 0.4;
+}
+
+.hero__btn {
+    margin-top: 5.5rem;
+}
+
+.hero__footer {
+    margin-top: 12rem;
+}
+
+/* End Hero */
