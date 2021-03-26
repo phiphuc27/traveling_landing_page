@@ -13,93 +13,169 @@
         <title>Polind</title>
     </head>
     <body>
-        <header>
-            <nav class="nav">
-                <div class="nav__logo">
-                    <img src="/assets/img/logo.png" alt="polind" />
-                    <span>Polind</span>
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__link">Guide</li>
-                    <li class="nav__link">Journey</li>
-                    <li class="nav__link">Hotels</li>
-                    <li class="nav__link">Travelers</li>
-                    <li class="nav__link">
-                        <span class="nav__search"><i class="fas fa-search"></i></span>
-                    </li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <h1 class="hero__title">Fall in love <span>with Poland</span></h1>
-                <h6 class="hero__subtitle">Best way to find you perfect place in Poland</h6>
-                <div class="btn hero__btn">Search your place</div>
-                <h6 class="hero__footer">Popular places to discover</h6>
-            </div>
-        </header>
-
-        <main>
-            <section class="features">
-                <div class="features__container">
-                    <ul class="features__list">
-                        <li class="feature">
-                            <img
-                                class="feature__img"
-                                src="/assets/img/photo_dark_2.png"
-                                alt="feature_left"
-                            />
-                        </li>
-                        <li class="feature">
-                            <img
-                                class="feature__img"
-                                src="/assets/img/Zakopane.png"
-                                alt="Zakopane"
-                            />
-                            <div class="feature__info">
-                                <div class="feature__name">
-                                    <h3>Zakopane</h3>
-                                    <p>Małopolskie</p>
-                                </div>
-                                <div class="btn feature__btn">View offers</div>
-                            </div>
-                        </li>
-                        <li class="feature">
-                            <img
-                                class="feature__img"
-                                src="/assets/img/Sandomierz.png"
-                                alt="Sandomierz"
-                            />
-                            <div class="feature__info">
-                                <div class="feature__name">
-                                    <h3>Sandomierz</h3>
-                                    <p>Swietokrzyskie</p>
-                                </div>
-                                <div class="btn feature__btn">View offers</div>
-                            </div>
-                        </li>
-                        <li class="feature">
-                            <img class="feature__img" src="/assets/img/Sopot.png" alt="Sopot" />
-                            <div class="feature__info">
-                                <div class="feature__name">
-                                    <h3>Sopot</h3>
-                                    <p>Pomorskie</p>
-                                </div>
-                                <div class="btn feature__btn">View offers</div>
-                            </div>
-                        </li>
-                        <li class="feature">
-                            <img
-                                class="feature__img"
-                                src="/assets/img/photo_dark_1.png"
-                                alt="feature_right"
-                            />
+        <div class="wrapper">
+            <header>
+                <nav class="nav">
+                    <a href="#" class="nav__logo">
+                        <img src="/assets/img/logo.png" alt="polind" />
+                        <span>Polind</span>
+                    </a>
+                    <ul class="nav__list">
+                        <li class="nav__link"><a href="#">Guide</a></li>
+                        <li class="nav__link"><a href="#">Journey</a></li>
+                        <li class="nav__link"><a href="#">Hotels</a></li>
+                        <li class="nav__link"><a href="#">Travelers</a></li>
+                        <li class="nav__link">
+                            <a href="#"
+                                ><span class="nav__search"><i class="fas fa-search"></i></span
+                            ></a>
                         </li>
                     </ul>
+                </nav>
+                <div class="hero">
+                    <h1 class="hero__title">Fall in love <span>with Poland</span></h1>
+                    <h6 class="hero__subtitle">Best way to find you perfect place in Poland</h6>
+                    <a href="#" class="btn btn--primary hero__btn">Search your place</a>
+                    <h6 class="hero__footer">Popular places to discover</h6>
                 </div>
-            </section>
+            </header>
 
-            <section class="search">
-                <h3>Where you want to go?</h3>
-            </section>
-        </main>
+            <main>
+                <section class="features">
+                    <div class="features__container">
+                        <ul class="features__list">
+                            <li class="feature">
+                                <img
+                                    class="feature__img"
+                                    src="/assets/img/photo_dark_2.png"
+                                    alt="feature_left"
+                                />
+                            </li>
+                            <li class="feature">
+                                <img
+                                    class="feature__img"
+                                    src="/assets/img/Zakopane.png"
+                                    alt="Zakopane"
+                                />
+                                <div class="feature__info">
+                                    <div class="feature__name">
+                                        <h3>Zakopane</h3>
+                                        <p>Małopolskie</p>
+                                    </div>
+                                    <a href="#" class="btn btn--primary feature__btn"
+                                        >View offers</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="feature">
+                                <img
+                                    class="feature__img"
+                                    src="/assets/img/Sandomierz.png"
+                                    alt="Sandomierz"
+                                />
+                                <div class="feature__info">
+                                    <div class="feature__name">
+                                        <h3>Sandomierz</h3>
+                                        <p>Swietokrzyskie</p>
+                                    </div>
+                                    <a href="#" class="btn btn--primary feature__btn"
+                                        >View offers</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="feature">
+                                <img class="feature__img" src="/assets/img/Sopot.png" alt="Sopot" />
+                                <div class="feature__info">
+                                    <div class="feature__name">
+                                        <h3>Sopot</h3>
+                                        <p>Pomorskie</p>
+                                    </div>
+                                    <a href="#" class="btn btn--primary feature__btn"
+                                        >View offers</a
+                                    >
+                                </div>
+                            </li>
+                            <li class="feature">
+                                <img
+                                    class="feature__img"
+                                    src="/assets/img/photo_dark_1.png"
+                                    alt="feature_right"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="container search">
+                    <h3 class="search__title">Where you want to go?</h3>
+                    <form action="" class="search__form">
+                        <div class="search__bar">
+                            <input type="text" placeholder="Search place" class="search__input" />
+                            <button type="submit" class="search__submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="search__categories">
+                            <ul class="search__categories-left">
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="journey"
+                                        name="category"
+                                        value="journey"
+                                        checked="checked"
+                                    />
+                                    <label for="journey" class="btn btn--secondary btn--small"
+                                        >Journey</label
+                                    >
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="traveler"
+                                        name="category"
+                                        value="traveler"
+                                    />
+                                    <label for="traveler" class="btn btn--secondary btn--small">
+                                        Travelers</label
+                                    >
+                                </li>
+                                <li>
+                                    <input type="radio" id="guide" name="category" value="guide" />
+                                    <label for="guide" class="btn btn--secondary btn--small"
+                                        >Guide</label
+                                    >
+                                </li>
+                            </ul>
+                            <ul class="search__categories-right">
+                                <li>
+                                    <input type="radio" id="mazury" name="place" value="mazury" />
+                                    <label for="mazury" class="btn btn--outline btn--small"
+                                        >Mazury</label
+                                    >
+                                </li>
+                                <li>
+                                    <input type="radio" id="cracow" name="place" value="cracow" />
+                                    <label for="cracow" class="btn btn--outline btn--small"
+                                        >Cracow</label
+                                    >
+                                </li>
+                                <li>
+                                    <input
+                                        type="radio"
+                                        id="zakopane"
+                                        name="place"
+                                        value="zakopane"
+                                    />
+                                    <label for="zakopane" class="btn btn--outline btn--small"
+                                        >Zakopane</label
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
