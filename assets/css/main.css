@@ -8,6 +8,8 @@
 
     --clr-text-primary: #606f81;
     --clr-text-secondary: #9fa8b2;
+
+    --box-shadow: 0 0 85px rgba(141, 148, 169, 0.15);
 }
 
 * {
@@ -27,6 +29,10 @@ h1 {
 
 h3 {
     font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem;
 }
 
 h6 {
@@ -119,9 +125,46 @@ header {
     background-color: var(--clr-shade);
 }
 
+.btn--transparent {
+    color: var(--clr-text-primary);
+    box-shadow: 0 0 54px rgba(141, 148, 169, 0.25);
+}
+
+.btn--transparent:hover {
+    color: var(--clr-secondary-shadow);
+    background-color: var(--clr-secondary);
+}
+
 .btn--small {
     text-transform: none;
     padding: 1rem 1.5rem;
+}
+
+.text-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--clr-shade);
+    opacity: 0.1;
+    padding: 6rem 0;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.text-bg > span {
+    display: block;
+    text-align: right;
+    line-height: 0.75;
+    margin-right: -3rem;
+    font-size: 35rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: white;
+    text-shadow: 0 0 125px rgba(15, 19, 31, 0.25);
 }
 
 /* Navbar */
@@ -327,7 +370,7 @@ header {
     outline: none;
     border: none;
     border-radius: 10rem;
-    box-shadow: 0 0 85px rgba(141, 148, 169, 0.15);
+    box-shadow: var(--box-shadow);
     transition: box-shadow ease-in 250ms;
 }
 
@@ -394,4 +437,177 @@ header {
     margin-right: auto;
 }
 
+.search__result {
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.search__result-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 3rem;
+}
+
+.search__result-item {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search__result-item > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.search__result-item > h3 {
+    margin-top: 3rem;
+    color: var(--clr-text-primary);
+}
+
+.search__result-item > p {
+    margin-bottom: 3rem;
+    color: var(--clr-text-secondary);
+}
+
+.search__result-item > a {
+    padding: 1.5rem 3rem;
+    margin-bottom: 2rem;
+}
+
 /* End Search Section */
+
+/* Explore Section */
+
+.explore {
+    position: relative;
+    max-height: 90rem;
+}
+
+.explore__title {
+    padding-top: 7rem;
+    text-align: center;
+    margin-bottom: 7rem;
+    color: var(--clr-text-primary);
+}
+
+.explore__content {
+    display: flex;
+    gap: 3rem;
+}
+
+.explore__text {
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 14rem;
+}
+
+.explore__text h3 {
+    font-size: 3.6rem;
+    color: var(--clr-secondary);
+    margin-bottom: 5rem;
+}
+
+.explore__text p {
+    line-height: 2;
+    color: var(--clr-text-secondary);
+}
+
+.explore__text p:first-of-type {
+    margin-bottom: 4rem;
+}
+
+.explore__text a {
+    padding: 1.5rem 3rem;
+    margin-top: 6rem;
+}
+
+.explore__img {
+    position: relative;
+    width: 100%;
+    height: 555px;
+}
+
+.explore__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.explore__img::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 100%;
+    height: 100%;
+
+    border: 2rem solid var(--clr-secondary);
+    z-index: -1;
+}
+
+/* End Explore Section */
+
+/* Sign up Section */
+
+.signup {
+    width: 100%;
+    max-height: 64rem;
+    background-image: url('/assets/img/bg_signup.png');
+    background-size: cover;
+    color: white;
+    padding: 20rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup > a {
+    padding: 1.5rem 3rem;
+    margin: 5rem 0;
+}
+
+.signup > p {
+    font-size: 1.8rem;
+}
+
+.signup__link {
+    color: var(--clr-secondary);
+    text-decoration: underline;
+}
+
+.signup__link:hover {
+    color: var(--clr-secondary-shadow);
+}
+
+/* End Sign up Section */
+
+/* Footer */
+
+footer {
+    position: relative;
+    max-height: 50rem;
+    padding-top: 17rem;
+    padding-bottom: 23rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    color: var(--clr-text-primary);
+}
+
+footer > .text-bg > span {
+    text-align: center;
+    line-height: 36rem;
+}
+
+/* End Footer */
