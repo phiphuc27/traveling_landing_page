@@ -147,6 +147,10 @@ header {
     right: 0;
     bottom: 0;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     background-color: var(--clr-shade);
     opacity: 0.1;
     padding: 6rem 0;
@@ -177,6 +181,10 @@ header {
 
     color: white;
     font-size: 1.8rem;
+}
+
+.nav__mobile {
+    display: none;
 }
 
 .nav__logo,
@@ -462,7 +470,7 @@ header {
 
 .search__result-item > img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -605,9 +613,282 @@ footer {
     color: var(--clr-text-primary);
 }
 
-footer > .text-bg > span {
-    text-align: center;
-    line-height: 36rem;
+footer > .text-bg {
+    align-items: center;
 }
 
 /* End Footer */
+
+/* Media Query */
+
+@media screen and (max-width: 1290px) {
+    h1 {
+        font-size: 8.8rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+
+    .container {
+        padding: 0 3rem;
+    }
+
+    .hero__title {
+        margin-top: 15rem;
+    }
+
+    .hero__footer {
+        margin-top: 17rem;
+    }
+
+    .features__container {
+        padding-bottom: 20rem;
+    }
+
+    .features__list {
+        top: -15rem;
+        height: 30rem;
+        gap: 1em;
+    }
+
+    .feature:hover .feature__name h3 {
+        font-size: 3rem;
+    }
+
+    .feature__btn {
+        width: 70%;
+    }
+
+    .explore__img {
+        width: 100%;
+    }
+
+    .explore__img::before {
+        top: 1rem;
+        left: 1rem;
+        border: 1rem solid var(--clr-secondary);
+    }
+}
+
+@media screen and (max-width: 920px) {
+    h3 {
+        font-size: 3.2rem;
+    }
+
+    .text-bg span {
+        font-size: 24rem;
+        line-height: 1;
+    }
+
+    .features__container {
+        padding-bottom: 25rem;
+    }
+
+    .feature:first-child,
+    .feature:last-child {
+        display: none;
+    }
+
+    .features__list {
+        top: -19rem;
+        height: 38rem;
+        gap: 2em;
+    }
+
+    .feature:hover .feature__name h3 {
+        font-size: 4.2rem;
+    }
+
+    .explore__title {
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .explore__content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .explore__img {
+        width: 70%;
+        height: 30rem;
+    }
+
+    .explore__img img {
+        object-position: top;
+    }
+
+    .explore__text {
+        margin-top: 3rem;
+        max-width: 75rem;
+    }
+
+    .explore__text h3 {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .explore__text p:first-of-type {
+        margin-bottom: 2rem;
+    }
+
+    .explore__text a {
+        display: block;
+        width: 17.5rem;
+        margin: 3.5rem auto 0 auto;
+    }
+
+    .signup h1 {
+        font-size: 7.8rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    h1 {
+        font-size: 7.4rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+
+    .container {
+        max-width: 500px;
+        padding: 0 1.5rem;
+    }
+
+    .nav {
+        align-items: center;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__mobile {
+        display: flex;
+    }
+
+    .hero__title {
+        width: 100%;
+    }
+
+    .features__container {
+        padding-bottom: 18rem;
+    }
+
+    .features__list {
+        top: -15rem;
+        height: 30rem;
+        gap: 1em;
+    }
+
+    .feature:hover .feature__name h3 {
+        font-size: 3rem;
+    }
+
+    .search__categories {
+        font-size: 1rem;
+        gap: 1em;
+    }
+
+    .search__categories-left li:last-child,
+    .search__categories-right li:last-child {
+        display: none;
+    }
+
+    .explore__text {
+        margin-top: 5rem;
+    }
+
+    .explore__text p {
+        font-size: 1.6rem;
+    }
+
+    .explore__text p:last-of-type {
+        display: none;
+    }
+
+    .signup h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    h1 {
+        font-size: 5.2rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .hero__title {
+        width: 80%;
+    }
+
+    .hero__btn {
+        margin-top: 7em;
+    }
+
+    .search__result-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search__categories {
+        flex-direction: column;
+        font-size: 1rem;
+        gap: 1em;
+    }
+
+    .search__result-item {
+        flex-shrink: 1;
+    }
+
+    .features__container {
+        padding-bottom: 18rem;
+    }
+
+    .features__list {
+        top: -12rem;
+        height: 24rem;
+        gap: 0;
+    }
+
+    .feature:hover .feature__name h3 {
+        font-size: 1.8rem;
+    }
+
+    .feature__btn {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .explore__img {
+        width: 80%;
+        height: 28rem;
+    }
+
+    .explore__text {
+        margin-top: 3rem;
+    }
+
+    .signup h1 {
+        text-align: center;
+    }
+}
+/* End Media Query */
